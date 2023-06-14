@@ -1,0 +1,52 @@
+{
+    "id": "6a2dee31-7c3c-4082-b84b-7c0927fbe99a",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "思维导图格式扩展",
+    "logo": "/logo.jpg",
+    "devTools": true,
+    "keywords": [
+        "思维导图",
+        "脑图",
+        "Mind Map",
+        "Xmind",
+        "FreeMind",
+        "MindManager",
+        "KityMinder"
+    ],
+    "preview": {
+        "km": {
+            "thumbnail": {
+                "path": "thumbnail.js"
+            },
+            "viewer": {
+                "path": "viewer.html"
+            }
+        },
+        "xmind": {
+            "thumbnail": {
+                "path": "thumbnail.js"
+            },
+            "viewer": {
+                "path": "viewer.html"
+            }
+        },
+        "mm": {
+            "thumbnail": {
+                "path": "thumbnail.js"
+            },
+            "viewer": {
+                "path": "viewer.html"
+            }
+        },
+        "mmap": {
+            "thumbnail": {
+                "path": "thumbnail.js"
+            },
+            "viewer": {
+                "path": "viewer.html"
+            }
+        }
+    }
+}
