@@ -6,6 +6,8 @@ const theme = urlParams.get("theme");
 
 window.onload = async () => {
     try {
+        const $loading = document.querySelector(".loading");
+        $loading.classList.add(theme);
         if(filePath.endsWith(".km")) {
             document.querySelector("#minder-view").innerHTML = await fs.promises.readFile(filePath, "utf-8");
             const km = new kityminder.Minder();
@@ -31,6 +33,7 @@ window.onload = async () => {
                 }
                 km.on("layoutallfinish", init);
             });
+            $loading.remove();
             document.querySelector("#minder-view").style.opacity = "1";
         }
     } catch (err) {
